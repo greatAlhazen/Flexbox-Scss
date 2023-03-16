@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  background-image: linear-gradient(to bottom, #379683, #5cdb95);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
