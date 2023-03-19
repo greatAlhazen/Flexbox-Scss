@@ -1,0 +1,74 @@
+.user {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	padding-right: 2rem;
+
+	& > * {
+		cursor: pointer;
+	}
+
+	&__icon-container,
+	&__image-box {
+		position: relative;
+	}
+
+	&__icon-container {
+		width: 5rem;
+		height: 5rem;
+		background-color: $primary-color-2;
+		border-radius: 50%;
+
+		@include center;
+
+		margin-right: 2rem;
+	}
+
+	&__icon {
+		width: 3rem;
+		height: 3rem;
+		fill: $white-color;
+	}
+
+	&__badge {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: inline-block;
+		background-color: $secondary-color-2;
+		color: $white-color;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+
+		@include center;
+	}
+
+	&__image {
+		width: 6rem;
+		height: 6rem;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	&__image-box:hover &__image {
+		filter: blur(4px);
+	}
+
+	&__badge-name {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 1.5rem;
+		opacity: 0;
+		color: $white-color;
+		cursor: pointer;
+		transition: all .5s;
+	}
+
+	&__image-box:hover &__badge-name {
+		opacity: 1;
+		top: 50%;
+	}
+}

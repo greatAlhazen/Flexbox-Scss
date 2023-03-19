@@ -24,4 +24,122 @@ body {
   min-height: 100vh;
 }
 
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 10rem;
+}
+.search__btn {
+  border: none;
+  background-color: #ccc;
+}
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+}
+.search__box {
+  font-size: 1.5rem;
+  color: #000;
+  background-color: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10em;
+  width: 90%;
+}
+.search__box:focus {
+  outline: none;
+}
+.search__box::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.user {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+.user > * {
+  cursor: pointer;
+}
+.user__icon-container, .user__image-box {
+  position: relative;
+}
+.user__icon-container {
+  width: 5rem;
+  height: 5rem;
+  background-color: #5cdb95;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.user__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+}
+.user__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background-color: #2e1114;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user__image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user__image-box:hover .user__image {
+  filter: blur(4px);
+}
+.user__badge-name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  opacity: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.user__image-box:hover .user__badge-name {
+  opacity: 1;
+  top: 50%;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 8rem;
+}
+
+.main {
+  max-width: 125rem;
+  margin: 6rem auto;
+  background-color: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 1.5em;
+}
+
 /*# sourceMappingURL=style.css.map */

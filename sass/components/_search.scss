@@ -1,0 +1,37 @@
+.search{
+    flex:0 0 40%;
+    @include center;
+    background-color: $color-grey-2;
+    border-radius: 10rem;
+
+    &__btn{
+        border:none;
+        background-color: $color-grey-2;
+    }
+
+    &__icon{
+        height:2rem;
+        width:2rem;
+
+    }
+
+    &__box{
+        font-size:1.5rem;
+        color:$dark-color;
+        background-color: $color-grey-2;
+        border: none;
+        padding:.5rem 1rem;
+        border-radius: 10em;
+        width:90%;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 300;
+            font-size:1.2rem;
+        }
+    }
+
+}

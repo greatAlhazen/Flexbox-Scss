@@ -9,7 +9,40 @@
     <title>Hotel app</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="main">
+        
+        <header class="header">
+            <img src="images/logo.png" alt="Logo" class="header__logo">
+            <form action="#" class="search">
+                <button class="search__btn">
+                    <svg class="search__icon">
+                        <use xlink:href="images/sprite.svg#icon-paper-plane"></use>
+                    </svg>
+                </button>
+                <input type="text" class="search__box" placeholder="Search anything">
+            </form>
+
+            <nav class="user">
+                <div class="user__icon-container">
+                    <svg class="user__icon">
+                        <use xlink:href="images/sprite.svg#icon-new"></use>
+                    </svg>
+                    <span class="user__badge">3</span>
+                </div>
+                <div class="user__icon-container">
+                    <svg class="user__icon">
+                        <use xlink:href="images/sprite.svg#icon-typing"></use>
+                    </svg>
+                    <span class="user__badge">5</span>
+                </div>
+                <div class="user__image-box">
+                    <img src="images/user.jpg" class="user__image" alt="User Image">
+                    <figcaption class="user__badge-name">Enes</figcaption>
+                </div>
+            </nav>
+        </header>
+
+    </div>
     
 </body>
 </html>

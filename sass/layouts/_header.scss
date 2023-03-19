@@ -1,0 +1,14 @@
+.header{
+    height:7rem;
+    background-color: $white-color;
+    border-bottom: $border;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        width:8rem;
+    }
+
+
+}
