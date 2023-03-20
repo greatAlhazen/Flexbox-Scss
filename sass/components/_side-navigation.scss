@@ -1,0 +1,58 @@
+.sidebar-nav{
+    font-size:1.5rem;
+
+    &__item{
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &::before{
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:.2em;
+            background-color: $primary-color-2;
+            transform:scale(0);
+            transition: transform .2s, width .2s cubic-bezier(1,0,0,1) .2s;
+        }
+
+        &:hover::before,
+        &--active::before{
+            transform: scale(1);
+            width:100%;
+        }
+
+    }
+
+    &__link{
+        display:flex;
+        gap:1rem;
+        align-items: center;
+        position: relative;
+        padding:1rem 2.5rem;
+        text-transform: uppercase;
+        z-index: 10;
+        transition: all .6s;
+    }
+
+    &__icon{
+        width:2rem;
+        height:2rem;
+        fill: $primary-color;
+        transition: all .6s;
+    }
+
+   &__item:hover &__icon, &__item--active &__icon{
+        fill: $secondary-color;
+        z-index: 10;
+    }
+
+    &__item:hover &__link, &__item--active &__link{
+        color:$color-grey-1;
+        z-index: 10;
+    }
+}
