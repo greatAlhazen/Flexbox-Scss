@@ -182,10 +182,69 @@ a {
   z-index: 10;
 }
 
+.image-gallery {
+  display: flex;
+}
+.image-gallery__item {
+  position: relative;
+  cursor: pointer;
+}
+.image-gallery__photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 0.2s;
+}
+.image-gallery__item:hover .image-gallery__photo {
+  filter: brightness(1.5) blur(2px);
+}
+.image-gallery__detail {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #501b1d;
+  opacity: 0;
+  transition: left 0.4s, opacity 0.3s;
+}
+.image-gallery__item:hover .image-gallery__detail {
+  left: 50%;
+  opacity: 1;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+}
+.overview__title {
+  font-size: 2.3rem;
+  color: #2e1114;
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+}
+.overview__rating {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+.overview__star-icon, .overview__map-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.overview__star-icon {
+  fill: #D5AB55;
+}
+.overview__map-icon {
+  fill: #379683;
+}
+
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -219,6 +278,10 @@ a {
 
 .content-box {
   display: flex;
+}
+
+.content {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

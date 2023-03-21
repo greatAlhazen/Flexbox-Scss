@@ -1,0 +1,36 @@
+.image-gallery{
+    display:flex;
+
+    &__item{
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__photo{
+        width:100%;
+        height: 100%;
+        display: block;
+        transition: all .2s;
+    }
+
+    &__item:hover &__photo{
+        filter:brightness(1.5) blur(2px);
+    }
+
+    &__detail{
+        position: absolute;
+        top:50%;
+        left:0%;
+        transform: translate(-50%,-50%);
+        font-size:1.7rem;
+        font-weight: 900;
+        color:$secondary-color;
+        opacity: 0;
+        transition: left 0.4s, opacity 0.3s;
+    }
+
+    &__item:hover &__detail{
+        left:50%;
+        opacity: 1;
+    }
+}
