@@ -1,0 +1,28 @@
+.recommend {
+	margin-top: 3rem;
+	display:flex;
+	align-items: center;
+
+	&__desc{
+		margin-right: auto;
+		font-size:1.5rem;
+	}
+
+	&__users{
+		display: flex;	
+	}
+
+	&__photo {
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		border:2px solid $secondary-color;
+
+
+        &:not(:last-child) {
+            margin-right: -2rem;
+        }
+	}
+
+
+}

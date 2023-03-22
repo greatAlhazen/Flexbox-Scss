@@ -1,0 +1,17 @@
+.btn{
+    border:none;
+    border-bottom: 1px solid $secondary-color-2;
+    padding:2px;
+    padding-bottom: 3px;
+    background-color: transparent;
+    color:$secondary-color;
+    font-size: 1.8rem;
+    transition: all .4s;
+
+    &:hover{
+        background-color: $primary-color;
+        border-bottom: none;
+        color:$white-color;
+        animation: heartbeat 1s infinite;
+    }
+}

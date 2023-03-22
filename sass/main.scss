@@ -1,12 +1,19 @@
 @import "abstract/variables";
 @import "abstract/mixins";
+@import "abstract/animations";
 
 @import "base/base";
 
+@import "components/buttons";
 @import "components/search";
 @import "components/user";
 @import "components/side-navigation";
 @import "components/image-gallery";
+@import "components/overview";
+@import "components/overview";
+@import "components/list";
+@import "components/recommend";
+
 
 @import "layouts/header";
 @import "layouts/sidebar";

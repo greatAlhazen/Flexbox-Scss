@@ -1,0 +1,29 @@
+.list{
+    margin-top:4rem;
+    display:flex;
+    flex-wrap: wrap;
+    font-size:1.6rem;
+
+    &__item{
+        flex:0 0 50%;
+        margin-bottom:.5rem;
+
+        &::before{
+            content: '';
+            display:inline-block;
+            height:1.5rem;
+            width:1.5rem;     
+            background-image: url(../images/pin.svg);
+            background-size: cover;
+    
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: $primary-color;
+                -webkit-mask-image: url(../images/pin.svg);
+                -webkit-mask-size: cover;
+                mask-image: url(../images/pin.svg);
+                mask-size: cover;
+                background-image: none;
+            }
+        }
+    }
+}
