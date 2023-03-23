@@ -369,6 +369,52 @@ button {
   margin-right: -2rem;
 }
 
+.review {
+  background-color: #379683;
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+.review:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5.5em 5.5em, rgba(0, 0, 0, 0.12) 0px -1.2em 3em, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 1.2em 1.3em, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.review__desc {
+  text-align: center;
+}
+.review:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.review__date {
+  color: #ccc;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.review__image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.7);
+  margin: 1.5rem 0;
+}
+.review__rating {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.8rem;
+  background-color: #501b1d;
+  padding: 1rem;
+}
+
 .header {
   height: 7rem;
   background-color: #fff;
@@ -424,6 +470,7 @@ button {
 }
 .detail__reviews {
   flex: 1;
+  margin-left: 2rem;
 }
 .detail__comment {
   font-size: 1.5rem;
