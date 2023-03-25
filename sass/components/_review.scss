@@ -19,6 +19,10 @@
 
     &:not(:last-child){
         margin-bottom:2rem;
+
+        @media only screen and (max-width: 960px) {
+            margin-bottom: 0;
+        }
     }
 
     &__user{
