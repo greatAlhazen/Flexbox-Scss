@@ -42,3 +42,8 @@ button{
     cursor: pointer;
     outline: none;
 }
+
+::selection {
+    background-color: $secondary-color;
+    color: $white-color;
+}

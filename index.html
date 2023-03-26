@@ -12,7 +12,7 @@
     <div class="main">
         
         <header class="header">
-            <img src="images/logo.png" alt="Logo" class="header__logo">
+            <img srcset="images/logo1x.png 1x, images/logo2x.png 2x" alt="Logo" class="header__logo" src="images/logo2x.png">
             <form action="#" class="search">
                 <button class="search__btn">
                     <svg class="search__icon">
@@ -36,8 +36,10 @@
                     <span class="user__badge">5</span>
                 </div>
                 <div class="user__image-box">
+                    <a href="#popup">
                     <img src="images/user.jpg" class="user__image" alt="User Image">
                     <figcaption class="user__badge-name">Enes</figcaption>
+                </a>
                 </div>
             </nav>
         </header>
@@ -86,15 +88,24 @@
             <main class="content">
                 <div class="image-gallery">
                     <figure class="image-gallery__item">
-                        <img src="images/image-1.jpg" alt="Photo 1" class="image-gallery__photo">
+                        <img srcset="images/image-1-small.jpg 300w, images/image-1.jpg 1000w"
+                        alt="Image 1"
+                        class="image-gallery__photo"
+                        src="images/image-1.jpg">
                         <figcaption class="image-gallery__detail">Awesome architecture</figcaption>
                     </figure>
                     <figure class="image-gallery__item">
-                        <img src="images/image-2.jpg" alt="Photo 1" class="image-gallery__photo">
+                        <img srcset="images/image-2-small.jpg 300w, images/image-2.jpg 1000w"
+                        alt="Image 1"
+                        class="image-gallery__photo"
+                        src="images/image-2.jpg">
                         <figcaption class="image-gallery__detail">Relax yourself</figcaption>
                     </figure>
                      <figure class="image-gallery__item">
-                        <img src="images/image-3.jpg" alt="Photo 1" class="image-gallery__photo">
+                        <img srcset="images/image-3-small.jpg 300w, images/image-3.jpg 1000w"
+                        alt="Image 1"
+                        class="image-gallery__photo"
+                        src="images/image-3.jpg">
                         <figcaption class="image-gallery__detail">Explore Everything</figcaption>
                     </figure>
                 </div>
@@ -185,6 +196,60 @@
                     <button class="btn">Book now</button>
                 </div>
             </main>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__item">
+                <div class="popup__item-left">
+                <svg class="popup__icon popup__icon--main">
+                    <use xlink:href="images/sprite.svg#icon-cog"></use>
+                </svg>
+                <div class="popup__item-title">Settings</div>
+            </div>
+            <a href="#" class="popup__item-right">
+                <svg class="popup__icon">
+                    <use xlink:href="images/sprite.svg#icon-circle-right"></use>
+                </svg>
+            </a>
+            </div>
+            <div class="popup__item">
+                <div class="popup__item-left">
+                <svg class="popup__icon popup__icon--main">
+                    <use xlink:href="images/sprite.svg#icon-question"></use>
+                </svg>
+                <div class="popup__item-title">Help</div>
+            </div>
+            <a href="#" class="popup__item-right">
+                <svg class="popup__icon">
+                    <use xlink:href="images/sprite.svg#icon-circle-right"></use>
+                </svg>
+            </a>
+            </div>
+            <div class="popup__item">
+                <div class="popup__item-left">
+                <svg class="popup__icon popup__icon--main">
+                    <use xlink:href="images/sprite.svg#icon-lock-open"></use>
+                </svg>
+                <div class="popup__item-title">Privacy</div>
+            </div>
+            <a href="#" class="popup__item-right">
+                <svg class="popup__icon">
+                    <use xlink:href="images/sprite.svg#icon-circle-right"></use>
+                </svg>
+            </a>
+            </div>
+            <div class="popup__item">
+                <div class="popup__item-left">
+                <svg class="popup__icon popup__icon--main">
+                    <use xlink:href="images/sprite.svg#icon-bubbles"></use>
+                </svg>
+                <div class="popup__item-title">Feedback</div>
+            </div>
+            <a href="#" class="popup__item-right">
+                <svg class="popup__icon">
+                    <use xlink:href="images/sprite.svg#icon-circle-right"></use>
+                </svg>
+            </a>
+            </div>
         </div>
     </div>
     
