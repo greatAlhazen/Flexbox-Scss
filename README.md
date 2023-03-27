@@ -13,17 +13,21 @@ A hotel site built that used flexbox grid system with Sass/Scss
 - Clone the repo: 
 
 ```
-git clone https://greatalhazen.github.io/Flexbox-Scss/
+git clone git@github.com:greatAlhazen/Flexbox-Scss.git
 ```
 
-- Get into main directory
+- Get into main directory and execute these two commands in order
+
+```
+npm install
+```
 
 ```
 npm run watch
 ```
 
-- after those you can freely modify css or images folder and index.html file
-- when the change is done get into terminal
+- After those you can modify sass or images folder and index.html file
+- When the change is done get into terminal
 
 ```
 npm run build
